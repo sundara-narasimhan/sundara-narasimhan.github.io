@@ -62,6 +62,25 @@ section {
 }
 
 
+/* Profile photo and About section */
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+
 footer {
     border-top: 1px solid #ddd;
     margin-top: 60px;
@@ -81,6 +100,12 @@ footer {
     nav a {
         display: inline-block;
         margin-bottom: 8px;
+    }
+
+    /* Make photo and text stack on small screens */
+
+    .about-container {
+        flex-direction: column;
     }
 
 }
