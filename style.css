@@ -1,111 +1,72 @@
-body {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 25px;
+body { max-width: 800px; margin: 0 auto; padding: 30px 25px;
 
-    font-family: Georgia, "Times New Roman", serif;
+font-family: Georgia, "Times New Roman", serif;
 
-    color: #222;
-    background: white;
+color: #222;
+background: white;
 
-    line-height: 1.6;
+line-height: 1.55;
+font-size: 15px;
+
+
 }
 
+header { border-bottom: 1px solid #ddd; padding-bottom: 18px; margin-bottom: 28px; }
 
-header {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 25px;
-    margin-bottom: 40px;
-}
+h1 { font-size: 28px; margin-bottom: 5px; }
 
+h2 { font-size: 20px; margin-top: 30px; margin-bottom: 10px; }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-}
+h3 { margin-top: 22px; }
 
+nav { margin-top: 18px; }
 
-h2 {
-    font-size: 24px;
-    margin-top: 45px;
-}
+nav a { margin-right: 18px; }
 
+a { color: #174a7e; text-decoration: none; }
 
-h3 {
-    margin-top: 30px;
-}
+a:hover { text-decoration: underline; }
 
-
-nav {
-    margin-top: 25px;
-}
-
-
-nav a {
-    margin-right: 20px;
-}
-
-
-a {
-    color: #174a7e;
-    text-decoration: none;
-}
-
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-section {
-    margin-bottom: 30px;
-}
-
+section { margin-bottom: 22px; }
 
 /* Profile photo and About section */
 
-.about-container {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
+.about-container { display: flex; gap: 25px; align-items: flex-start; }
+
+.profile-photo { width: 155px; height: 155px; object-fit: cover; flex-shrink: 0; }
+
+.about-text { flex: 1; }
+
+.about-text h2 { margin-top: 0; }
+
+footer { border-top: 1px solid #ddd; margin-top: 40px; padding-top: 15px;
+
+color: #777;
+font-size: 13px;
+
+
 }
-
-.profile-photo {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-}
-
-.about-text {
-    flex: 1;
-}
-
-
-footer {
-    border-top: 1px solid #ddd;
-    margin-top: 60px;
-    padding-top: 20px;
-
-    color: #777;
-    font-size: 14px;
-}
-
 
 @media (max-width: 600px) {
 
-    body {
-        padding: 25px 18px;
-    }
+body {
+    padding: 22px 18px;
+}
 
-    nav a {
-        display: inline-block;
-        margin-bottom: 8px;
-    }
+nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+}
 
-    /* Make photo and text stack on small screens */
+.about-container {
+    flex-direction: column;
+    gap: 15px;
+}
 
-    .about-container {
-        flex-direction: column;
-    }
+.profile-photo {
+    width: 145px;
+    height: 145px;
+}
+
 
 }
